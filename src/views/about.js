@@ -1,14 +1,9 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 
-class About extends React.Component {
-  render() {
-    return (
-    <div>
-      About
-    </div>
-    )
-  }
-}
+const About = () => (
+  <div>
+    <h1>about!</h1>
+  </div>
+)
 
-export default About;
+export default About

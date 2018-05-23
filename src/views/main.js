@@ -1,35 +1,22 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
-import Home from './home';
-import About from './about';
+import { Switch, Route } from 'react-router-dom';
+import Home from '../views/home';
+import About from '../views/about';
 
 
-class Main extends React.Component {
-  render() {
-    return(
-      <Router>
+// The Main component renders one of the three provided
+// Routes (provided that one matches). Both the /roster
+// and /schedule routes will match any pathname that starts
+// with /roster or /schedule. The / route will only match
+// when the pathname is exactly the string "/"
+const Main = () => (
+  <main>
+    <Switch>
+      <Route exact path='/' component={Home}/>
+      <Route path='/about' component={About}/>
 
-        <header>
+    </Switch>
+  </main>
+)
 
-<ul>
- <li><Link to='/'>Home</Link><Router/>
-   </li> 
-   <li><Link to='/about'>About</Link>
-   </li>
- 
-</ul> 
-
-</header>
-      <div>
-      <Route exact path = '/' component={Home}/> 
-      <Route path = '/about' component={About}/>
-      </div>
-      </Router>
-
-    )
-
-  }
-}
-
-export default Main;
+export default Main

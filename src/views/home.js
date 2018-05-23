@@ -1,14 +1,9 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 
-class Home extends React.Component {
-  render() {
-    return (
-    <div>
-      Home
-    </div>
-    )
-  }
-}
+const Home = () => (
+  <div>
+    <h1>Welcome to the Tornadoes Website!</h1>
+  </div>
+)
 
-export default Home;
+export default Home
