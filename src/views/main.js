@@ -2,6 +2,10 @@ import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 import Home from '../views/home';
 import About from '../views/about';
+import Media from '../views/media';
+import Blog from '../views/blog';
+import PastArticles from '../views/pastarticles';
+import Contact from '../views/contact';
 
 
 // The Main component renders one of the three provided
@@ -14,7 +18,10 @@ const Main = () => (
     <Switch>
       <Route exact path='/' component={Home}/>
       <Route path='/about' component={About}/>
-
+      <Route path='/media' component={Media}/>
+      <Route path='/blog' component={Blog}/>
+      <Route path='/pastarticles' component={PastArticles}/>
+      <Route path='/contact' component={Contact}/>
     </Switch>
   </main>
 )
