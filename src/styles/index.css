@@ -297,15 +297,31 @@ template {
 [hidden] {
   display: none; }
 
-.text {
-  font-size: 50px;
-  font-family: cursive;
-  position: relative; }
+#content-container {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  background: bisque;
+  position: relative;
+  z-index: 2;
+  -webkit-box-shadow: rgba(35, 35, 50, 0.8) 0px 0px 11px -2px;
+  -moz-box-shadow: rgba(35, 35, 50, 0.8) 0px 0px 11px -2px;
+  box-shadow: rgba(35, 35, 50, 0.8) 0px 0px 11px -2px; }
+
+h1 {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  -webkit-animation: fadeInUp .6s .5s ease both;
+  -moz-animation: fadeInUp .6s .5s ease both;
+  -ms-animation: fadeInUp .6s .5s ease both;
+  -o-animation: fadeInUp .6s .5s ease both;
+  animation: fadeInUp .6s .5s ease both; }
 
 .header-wrapper {
   width: 100%;
-  height: 80px;
-  background-color: green; }
+  height: 60px;
+  background-color: teal; }
 
 .logo {
   float: left; }
@@ -324,7 +340,9 @@ template {
   .wide a {
     text-decoration: none;
     display: inline-block;
-    color: black; }
+    color: white;
+    padding-top: 0px;
+    font-family: fantasy; }
 
 .mobile-wrapper {
   display: none; }
@@ -333,8 +351,8 @@ template {
       display: block; } }
   .mobile-wrapper .button-container {
     position: fixed;
-    top: 5%;
-    right: 2%;
+    top: 3%;
+    right: 1%;
     height: 27px;
     width: 36px;
     cursor: pointer;
@@ -344,15 +362,15 @@ template {
       opacity: .7; }
     .mobile-wrapper .button-container.active .top {
       transform: translateY(11px) translateX(0) rotate(45deg);
-      background: blue; }
+      background: white; }
     .mobile-wrapper .button-container.active .middle {
       opacity: 0;
-      background: black; }
+      background: white; }
     .mobile-wrapper .button-container.active .bottom {
       transform: translateY(-11px) translateX(0) rotate(-45deg);
-      background: black; }
+      background: white; }
     .mobile-wrapper .button-container span {
-      background: orange;
+      background: white;
       border: none;
       height: 5px;
       width: 100%;
@@ -367,7 +385,7 @@ template {
         top: 22px; }
   .mobile-wrapper .overlay {
     position: fixed;
-    background: yellow;
+    background: teal;
     top: 0;
     left: 0;
     width: 100%;
@@ -416,7 +434,7 @@ template {
       .mobile-wrapper ul li a {
         display: block;
         position: relative;
-        color: green;
+        color: white;
         text-decoration: none;
         overflow: hidden; }
         .mobile-wrapper ul li a:hover:after, .mobile-wrapper ul li a:focus:after, .mobile-wrapper ul li a:active:after {
@@ -429,7 +447,7 @@ template {
           width: 0%;
           transform: translateX(-50%);
           height: 3px;
-          background: green;
+          background: lightgray;
           transition: .35s; }
 
 @keyframes fadeInRight {
@@ -442,9 +460,56 @@ template {
 
 .footer {
   position: absolute;
+  bottom: -60px;
   left: 0;
-  bottom: 0;
   width: 100%;
-  background-color: red;
+  background-color: teal;
   color: white;
-  text-align: center; }
+  text-align: center;
+  height: 60px; }
+  .footer ul {
+    float: right; }
+  .footer li {
+    list-style: none;
+    margin: 20px;
+    display: inline-block; }
+    .footer li a {
+      text-decoration: none;
+      display: inline-block;
+      color: white;
+      font-family: fantasy; }
+      .footer li a a:hover {
+        opacity: 5; }
+
+#content-container {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  background: bisque;
+  position: relative;
+  z-index: 2;
+  -webkit-box-shadow: rgba(35, 35, 50, 0.8) 0px 0px 11px -2px;
+  -moz-box-shadow: rgba(35, 35, 50, 0.8) 0px 0px 11px -2px;
+  box-shadow: rgba(35, 35, 50, 0.8) 0px 0px 11px -2px; }
+
+h1 {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  -webkit-animation: fadeInUp .6s .5s ease both;
+  -moz-animation: fadeInUp .6s .5s ease both;
+  -ms-animation: fadeInUp .6s .5s ease both;
+  -o-animation: fadeInUp .6s .5s ease both;
+  animation: fadeInUp .6s .5s ease both; }
+
+.abt-container {
+  display: grid;
+  height: 100%; }
+
+.left-half {
+  background: #ff9e2c;
+  grid-column: 1; }
+
+.right-half {
+  background: #b6701e;
+  grid-column: 2; }

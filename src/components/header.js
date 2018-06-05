@@ -35,7 +35,7 @@ class Header extends React.Component {
     return (
       <nav className="header-wrapper">
     <div className="wide">
-      <div className='logo'>Julia Kate</div>
+      <img src='./assets/j.png' alt='j-logo'className='logo'></img>
         <ul>
          <li><Link to='/'>Home</Link></li>
          <li><Link to='/about'>About</Link></li>

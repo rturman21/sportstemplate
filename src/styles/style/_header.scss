@@ -1,7 +1,7 @@
                          .header-wrapper {
                              width: 100%;
-                             height: 80px;
-                             background-color: green;
+                             height: 60px;
+                             background-color: teal;
                          }
                          
                          .logo {
@@ -24,7 +24,9 @@
                              a {
                                  text-decoration: none;
                                  display: inline-block;
-                                 color: black;
+                                 color: white;
+                                 padding-top: 0px;
+                                 font-family: fantasy;
                              }
                          }
                          
@@ -35,8 +37,8 @@
                              }
                              .button-container {
                                  position: fixed;
-                                 top: 5%;
-                                 right: 2%;
+                                 top: 3%;
+                                 right: 1%;
                                  height: 27px;
                                  width: 36px;
                                  cursor: pointer;
@@ -48,19 +50,19 @@
                                  &.active {
                                      .top {
                                          transform: translateY(11px) translateX(0) rotate(45deg);
-                                         background: blue;
+                                         background: white;
                                      }
                                      .middle {
                                          opacity: 0;
-                                         background: black;
+                                         background: white;
                                      }
                                      .bottom {
                                          transform: translateY(-11px) translateX(0) rotate(-45deg);
-                                         background: black;
+                                         background: white;
                                      }
                                  }
                                  span {
-                                     background: orange;
+                                     background: white;
                                      border: none;
                                      height: 5px;
                                      width: 100%;
@@ -79,7 +81,7 @@
                              }
                              .overlay {
                                  position: fixed;
-                                 background: yellow;
+                                 background: teal;
                                  top: 0;
                                  left: 0;
                                  width: 100%;
@@ -135,7 +137,7 @@
                                      a {
                                          display: block;
                                          position: relative;
-                                         color: green;
+                                         color: white;
                                          text-decoration: none;
                                          overflow: hidden;
                                          &:hover:after,
@@ -151,7 +153,7 @@
                                              width: 0%;
                                              transform: translateX(-50%);
                                              height: 3px;
-                                             background: green;
+                                             background: lightgray;
                                              transition: .35s;
                                          }
                                      }
